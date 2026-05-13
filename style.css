@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111;
+}
+
+.calculator {
+    width: 320px;
+    background-color: #222;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px #000;
+}
+
+#result {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: right;
+    padding: 0 10px;
+    color: white;
+    background-color: #333;
+    outline: none;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Number buttons */
+.number {
+    background-color: #444;
+    color: white;
+}
+
+.number:hover {
+    background-color: #555;
+}
+
+/* Symbol buttons (+, -, *, /, %, ., ()) */
+.symbol {
+    background-color: #333;
+    color: white;
+}
+
+.symbol:hover {
+    background-color: #333;;
+}
+
+/* Equal button */
+.equal {
+    background-color: #ff9933;
+    color: white;
+}
+
+.equal:hover {
+    background-color: #ff9933;
+}
+
+/* Clear button */
+.clear {
+    background-color: #ff9933;
+    color: white;
+}
+
+.clear:hover {
+    background-color: #e68a00;
+}
+
+/* Cross button */
+.cross {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.cross:hover {
+    background-color: #ff1a1a;
+}
